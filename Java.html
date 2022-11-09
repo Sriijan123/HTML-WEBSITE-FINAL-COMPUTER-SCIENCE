@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <style>
+            h1{
+                font-family:Courier New;
+                text-align:center;
+                background-color:#6be7ad
+            }
+            .h{
+                font-family:Tahoma;
+                text-align:center;
+                font-style: bold;
+                font-size: 15px;
+            }
+            .para{
+                font-size:15px;
+                font-family:Tahoma;
+                text-align:center;
+                color:#000000
+            }
+            table, th, td {
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+                border-right: 1px solid;
+                border-top: 1px solid;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            tr {
+                border-bottom: 1px solid #b3ff90;
+            }
+            table{
+                width: 100%;
+            }
+            .colour{
+                background-color: #00ffe5;
+            }
+            .colour2{
+                background-color: #1900ff;
+            }
+            .colour3{
+                background-color: #ff00bf;
+            }
+            td{
+                background-color: #ffffff;
+            }
+            input[type=text] {
+                padding: 12px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                transition: width 2s ease-in-out;
+            }
+            label{
+                padding: 20px;
+                font-size: 20px;
+                font-family: 'Trebuchet MS';
+            }
+            input[type=text]:focus {
+                width: 100%;
+            }
+            input[type=button] {
+                background-color: #00ffbb;
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            input[type=button]:hover {
+                background-color: #58ff63;
+            }
+        </style>
+        <script>
+            function add(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x+y
+                document.getElementById("tb3").value=z;
+            }
+            function sub(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x-y
+                document.getElementById("tb3").value=z;
+            }
+            function mul(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x*y
+                document.getElementById("tb3").value=z;
+            }
+            function div(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x/y
+                document.getElementById("tb3").value=z;
+            }
+            function mod(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x%y
+                document.getElementById("tb3").value=z;
+            }
+        </script>
+    </head>
+    <body bgcolor="FFFDD1">
+        <h1>Javascript</h1>
+        <table align="center">
+            <tr>
+                <td colspan="1" class="colour">
+                    <a class="h" href="My Timetable.html" target="1"><b>Timetable</b></a>
+                </td>
+                <td colspan="1" class="colour">
+                    <a class="h" href="Calculator.html" target="2"><b>Calculator</b></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" class="colour">
+                    <iframe name="1" frameborder="0" width="550px" height="300 px"></iframe>
+                </td>
+                <td colspan="1" class="colour">
+                    <iframe name="2" frameborder="0"  width="550px" height="300 px"></iframe>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
